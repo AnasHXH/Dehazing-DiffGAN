@@ -1,0 +1,33 @@
+{
+  "name": "Laplacian_gan"
+  , "model": "spsr"
+  , "scale": 1 
+  , "gpu_ids": [0]
+
+  , "datasets": {
+    "test_1": { 
+      "name": "gan_output"
+      , "mode": "LR"
+      // , "dataroot_HR": "/mnt/4/jzy/dataset/SR_dataset/test_datasets/Set5/Set5_HR" // needed in "LRHR" mode
+      , "dataroot_LR": "/home/anas/Anas_CODES/Dehazing_DiffGAN_paper/ntire24_output_folder-20241205T082128Z-001/ntire24_output_folder/test_v3/Reffusion_Cropped"
+    }
+  }
+  , "path": {
+    "root": "/home/anas/Anas_CODES/Dehazing_DiffGAN_paper/ntire24_output_folder-20241205T082128Z-001/ntire24_output_folder/test_v3/output" // change to your own root path
+    //, "resume_state": "../experiments/002_RRDB_ESRGAN_x4_DIV2K/training_state/65000.state"
+    , "pretrain_model_G": "/home/anas/Anas_CODES/Dehazing_DiffGAN_paper/ntire24_output_folder-20241205T082128Z-001/ntire24_output_folder/weights/Lap_GAn/70000_G.pth"
+  }
+
+  , "network_G": {
+    "which_model_G": "spsr_net"
+    , "norm_type": null
+    , "mode": "CNA"
+    , "nf": 64
+    , "nb": 23
+    , "in_nc": 3
+    , "out_nc": 3
+
+    , "gc": 32
+    , "group": 1
+  }
+}
