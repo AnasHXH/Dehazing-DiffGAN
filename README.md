@@ -1,4 +1,7 @@
 # Dehazing-DiffGAN
+[ <a href="https://colab.research.google.com/drive/179lOH2iVtM-VRuSn6KNoUl-TbEFjAet6?usp=sharing"><img src="https://colab.research.google.com/assets/colab-badge.svg" alt="google colab logo"></a>](https://colab.research.google.com/drive/179lOH2iVtM-VRuSn6KNoUl-TbEFjAet6?usp=sharing)
+
+**Note:** This code requires a GPU with more than 20GB of VRAM.
 
 This repository contains the code and resources for the paper **"Dehazing-DiffGAN: ............."**. 
 
