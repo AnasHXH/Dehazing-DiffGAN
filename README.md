@@ -92,7 +92,7 @@ The figure below details the performances of the proposed weight initialization 
 </p>
 
 <p align="center">
-  <img src="https://github.com/AnasHXH/Dehazing-DiffGAN/blob/main/nitre.jpg" width="800"/>
+  <img src="https://github.com/AnasHXH/Dehazing-DiffGAN/blob/main/ntire.jpg" width="800"/>
   <br><em>Figure 3: Results on DNH-HAZE dataset (real-world haze).</em>
 </p>
 
