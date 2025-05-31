@@ -81,16 +81,21 @@ In this repository, we conducted an extensive evaluation of the proposed Dehazin
   
 The figure below details the performances of the proposed weight initialization method on four public remote senging datasets, namely, UC-Merced, AID, KSA, and PatternNet.
 
-<img src="https://raw.githubusercontent.com/WadiiBoulila/Weight-Initialization/main/docs/img1.png" />
+<p align="center">
+  <img src="https://github.com/AnasHXH/Dehazing-DiffGAN/blob/main/thin.jpg" width="800"/>
+  <br><em>Figure 1: Comparative results on SateHaze1k (Thin and Moderate Fog).</em>
+</p>
 
-The training progress plots in the figures below illustrate the performance of the proposed weight initialization method, as well as the Xavier, He, and zerO methods, on the CIFAR-100 dataset. The first figure displays the training progress of validation accuracy, while the second figure focuses on validation loss.
+<p align="center">
+  <img src="https://github.com/AnasHXH/Dehazing-DiffGAN/blob/main/mod.jpg" width="800"/>
+  <br><em>Figure 2: Additional moderate fog comparison results.</em>
+</p>
 
-The analysis of the plots shows that the proposed weight initialization method outperforms the three other weight initialization techniques in terms of both accuracy and loss, as shown in both the overall training progress and the zoomed-in subplots. The performance advantage of the proposed method is visually apparent, with consistently higher accuracy values and lower loss values throughout the training process.
+<p align="center">
+  <img src="https://github.com/AnasHXH/Dehazing-DiffGAN/blob/main/nitre.jpg" width="800"/>
+  <br><em>Figure 3: Results on DNH-HAZE dataset (real-world haze).</em>
+</p>
 
-The comparison with He, Xavier, and zerO initialization methods further confirms the superior performance of the proposed approach. Notably, the zoomed-in subplots highlight the enhanced accuracy and reduced loss achieved by our proposed method in the final ten iterations. These findings highlight the effectiveness of the proposed weight initialization method in improving accuracy and minimizing the discrepancy between predicted and actual values.
-
-<img src="https://raw.githubusercontent.com/WadiiBoulila/Weight-Initialization/main/docs/img2.png" />
-<img src="https://raw.githubusercontent.com/WadiiBoulila/Weight-Initialization/main/docs/img3.png" />
 
 ### Dataset Setup
 To download the dataset:
