@@ -4,10 +4,25 @@ This repository is an implementation of "Dehazing-DiffGAN: Sequential Fusion of 
 # Abstract
 Atmospheric haze reduces image clarity, posing challenges for computer vision. Current methods often fail under dense haze, producing blurry or unrealistic results. To tackle this, we introduce Dehazing-DiffGAN, a two-stage deep learning model combining diffusion models and GANs. The first stage uses a diffusion process to remove haze and recover global and local features, while the second stage refines visual details using a GAN. This fusion produces high-quality, realistic outputs. Evaluated on tough datasets like SateHaze1k and DNH-HAZE, our method outperforms state-of-the-art models, achieving superior PSNR and LPIPS scores. Dehazing-DiffGAN proves to be a robust and effective solution for remote sensing image enhancement under challenging conditions.
 
-# Results
-In this repository, we conducted an extensive evaluation of the proposed Dehazing-DiffGAN by benchmarking it against more than fifteen cutting-edge dehazing techniques. This comparison includes several well-established models such as DCP, AOD-Net, FCTF-Net, PFF-Net, GridDehaze-Net, FFA-Net, SCA-Net, AIDTransformer, EDED-Net, ConvIR-S, ADND-Net, PhDNet, and HSMD-Net, among others, as presented in Tables 1 and 2. The comparative analysis was carried out using a range of quantitative metrics to rigorously assess each model's effectiveness in restoring image clarity, preserving structural details, and enhancing perceptual quality under various haze conditions.
+## 📊 Results
 
-👉 The following two tables present a comprehensive comparison of Dehazing-DiffGAN against these models. Table 1 includes methods evaluated using three metrics: PSNR, SSIM, and LPIPS — offering a detailed insight into both pixel-level fidelity and perceptual similarity. In contrast, Table 2 includes models that report results using only two metrics: PSNR and SSIM, along with the model size (in millions of parameters), providing a balance between accuracy and computational complexity.
+In this repository, we conducted an extensive evaluation of the proposed **Dehazing-DiffGAN** by benchmarking it against more than fifteen cutting-edge dehazing techniques. This comparison includes several well-established models such as DCP, AOD-Net, FCTF-Net, PFF-Net, GridDehaze-Net, FFA-Net, SCA-Net, AIDTransformer, EDED-Net, ConvIR-S, ADND-Net, PhDNet, and HSMD-Net, among others, as presented in Tables 1 and 2. The comparative analysis was carried out using a range of quantitative metrics to rigorously assess each model's effectiveness in restoring image clarity, preserving structural details, and enhancing perceptual quality under various haze conditions.
+
+👉 The following two tables present a comprehensive comparison of Dehazing-DiffGAN against these models.  
+- **Table 1** includes methods evaluated using **three metrics**: PSNR, SSIM, and LPIPS — offering detailed insights into both pixel-level fidelity and perceptual similarity.  
+- **Table 2** includes models that report results using **only PSNR and SSIM**, and also includes the number of model parameters (in millions), offering a trade-off between performance and complexity.
+
+
+## 📂 Dataset Result Visualizations
+
+- 🔗 **Results on DNH-HAZE Dataset**: [View Folder](https://drive.google.com/drive/folders/1dT_7bAajfdD9oXRbTqBJX-aZFt1tIgaB?usp=sharing)  
+- 🏆 Our Dehazing-DiffGAN achieved **best LPIPS** in the **CVPR NTIRE 2024 Dense and Non-Homogeneous Dehazing Challenge**  
+  📄 [Challenge Report (CVPR 2024)](https://openaccess.thecvf.com/content/CVPR2024W/NTIRE/html/Ancuti_NTIRE_2024_Dense_and_Non-Homogeneous_Dehazing_Challenge_Report_CVPRW_2024_paper.html)  
+  → Search for team name: **"PSU Team"**
+
+- 🔗 **Results on SateHaze1k Dataset**: [View Folder](https://drive.google.com/drive/folders/1kLl5qYFmgxtLqFOZAAauACP42ObWTm16?usp=sharing)  
+- 📄 Related paper: [WACV 2020 SateHaze1k Dataset](https://openaccess.thecvf.com/content_WACV_2020/html/Huang_Single_Satellite_Optical_Imagery_Dehazing_using_SAR_Image_Prior_Based_WACV_2020_paper.html)  
+
 
 <table>
 <thead>
