@@ -112,60 +112,52 @@ The figure below details the performances of the proposed weight initialization 
 </p>
 
 
-### Datasets
+## Datasets
 This work utilizes two remote sensing image datasets:
 
 ul> <li> <a href="https://codalab.lisn.upsaclay.fr/competitions/17529#learn_the_details" target="_blank"><strong>DNH-HAZE Dataset</strong></a> — A high-resolution real-world haze dataset used in the NTIRE dehazing challenges, featuring 6000×4000 images captured under various natural haze conditions. </li> <li> <a href="https://drive.google.com/drive/folders/1kLl5qYFmgxtLqFOZAAauACP42ObWTm16" target="_blank"><strong>SateHaze1k Dataset</strong></a> — A remote sensing haze dataset curated for evaluating dehazing performance on satellite images under thin, moderate, and thick fog levels. </li> </ul>
 
+## 🚀 Usage
 
-### Usage
-To run the training and evaluation with the default values, run the following command:
-```
-python run.py --train --eval
-```
-To run the code using your own parameters, run the following command
-```
-!python run.py                \
---dataset_name ucmerced       \
---model_name mobilenet_v2     \
---weight_init proposed        \
---train                       \
---eval                        \
---eval_summary                \
---epochs 1                    \
---batch_size 32               \
---learning_rate 0.0001        \
---save                        \
---overwrite                   \
---printing                    \
---avg_num 3                   \
---summary_save_path summary
-```
-or run the following command for short:
-```
-!python run.py -ds ucmerced -mn mobilenet_v2 -wi proposed -tr -ev -evs -ep 1 -bs 32 -lr 0.0001 -sv -ow -pr -an 3 -sp summary
-```
+### 🔍 Inference
 
-### Notes
-<ul>
-  <li>setting printing option as false will make you run the code in silent mode</li>
-  <li>eval_summary option will evaluate all the saved checkpoints and generate an organized CSV file that contains all the evaluations</li>
-  <li>in eval_summary option, the evaluations will use the validation set with avg_num. For example, I ran the code with eval_summary and avg_num = 3, this will evaluate the validation set 3 times and compute the average of all the the results</li>
-  <li>setting overwrite option as false will stop the training if you had a saved checkpoint and history with the same parameters (dataset name, model name, weight init, and epochs)</li>
-</ul>
+You can easily run inference on sample images using our provided Colab notebook or local script.
+
+- 📓 **Colab Notebook**:  
+  Run Dehazing-DiffGAN directly in the browser with Google Colab:  
+  [<img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open in Colab">](https://colab.research.google.com/drive/179lOH2iVtM-VRuSn6KNoUl-TbEFjAet6?usp=sharing)
+
+- 🧪 **Local Notebook**:  
+  We also provide a simple and clean Jupyter notebook for local inference:  
+  `easy_inference.ipynb`
+
+> Both notebooks allow you to load a pre-trained model and perform dehazing on your own images or samples from our datasets.
+
+---
+
+### 🏋️‍♂️ Training
+
+> 🔧 **Coming soon!**  
+Training scripts and configuration options will be released in an upcoming update.
+
+---
+
+### 📈 Testing and Evaluation
+
+> 📊 **Coming soon!**  
+We are preparing a full evaluation pipeline for reproducing results on the DNH-HAZE and SateHaze1k datasets.
 
 
-## Citation
-If you use any part of this work please cite using the following Bibtex format:
+
+## 📚 Citation
+
+If you use any part of this work, please cite it using the following BibTeX format:
+
 ```
-@article{BOULILA2024124344,
-title = {An effective weight initialization method for deep learning: Application to satellite image classification},
-journal = {Expert Systems with Applications},
-volume = {254},
-pages = {124344},
+@misc{anas2024dehazingdiffgan,
+title = {Dehazing-DiffGAN: Sequential Fusion of Diffusion Models and GANs for High-Fidelity Remote Sensing Image Dehazing},
+author = {Anas M. Ali and Bilel Benjdira and Wadii Boulila and Anis Koubaa},
 year = {2024},
-issn = {0957-4174},
-doi = {https://doi.org/10.1016/j.eswa.2024.124344},
-url = {https://www.sciencedirect.com/science/article/pii/S0957417424012107},
-author = {Wadii Boulila and Eman Alshanqiti and Ayyub Alzahem and Anis Koubaa and Nabil Mlaiki}
+howpublished = {\url{https://github.com/AnasHXH/Dehazing-DiffGAN}},
+note = {Under Review}
 }
