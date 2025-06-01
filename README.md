@@ -94,7 +94,7 @@ In this repository, we conducted an extensive evaluation of the proposed **Dehaz
 
 
   
-The figure below details the performances of the proposed weight initialization method on four public remote senging datasets, namely, UC-Merced, AID, KSA, and PatternNet.
+📷 The following figures illustrate qualitative results of Dehazing-DiffGAN under thin, moderate, and dense haze conditions, demonstrating its effectiveness in restoring image clarity across varying atmospheric scenarios.
 
 <p align="center">
   <img src="https://github.com/AnasHXH/Dehazing-DiffGAN/blob/main/thin.jpg" width="800"/>
