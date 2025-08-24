@@ -103,8 +103,8 @@ If you use any part of this work, please cite it using the following BibTeX form
 
 ```
 @misc{anas2024dehazingdiffgan,
-title = {Dehazing-DiffGAN: Sequential Fusion of Diffusion Models and GANs for High-Fidelity Remote Sensing Image Dehazing},
-author = {Anas M. Ali and Bilel Benjdira and Wadii Boulila and Anis Koubaa},
+title = {D},
+author = {A},
 year = {2024},
 howpublished = {\url{https://github.com/AnasHXH/Dehazing-DiffGAN}},
 note = {Under Review}
