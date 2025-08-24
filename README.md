@@ -28,13 +28,13 @@ To thoroughly evaluate the effectiveness of the proposed Dehazing-DiffGAN framew
 
 
 <p align="center">
-  <img src="https://github.com/AnasHXH/Dehazing-DiffGAN/blob/main/thin.jpg" width="800"/>
+  <img src="https://github.com/AnasHXH/Dehazing-DiffGAN/blob/main/table_1.png" width="800"/>
   <br><em>Figure 1: Comparative results on SateHaze1k (Thin and Moderate Fog).</em>
 </p>
 
 
 <p align="center">
-  <img src="https://github.com/AnasHXH/Dehazing-DiffGAN/blob/main/thin.jpg" width="800"/>
+  <img src="https://github.com/AnasHXH/Dehazing-DiffGAN/blob/main/table_2.png" width="800"/>
   <br><em>Figure 1: Comparative results on SateHaze1k (Thin and Moderate Fog).</em>
 </p>
 
