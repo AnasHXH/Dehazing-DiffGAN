@@ -63,7 +63,7 @@ To thoroughly evaluate the effectiveness of the proposed Dehazing-DiffGAN framew
 ## Datasets
 This work utilizes two remote sensing image datasets:
 
-ul> <li> <a href="https://codalab.lisn.upsaclay.fr/competitions/17529#learn_the_details" target="_blank"><strong>DNH-HAZE Dataset</strong></a> — A high-resolution real-world haze dataset used in the NTIRE dehazing challenges, featuring 6000×4000 images captured under various natural haze conditions. </li> <li> <a href="https://drive.google.com/drive/folders/1kLl5qYFmgxtLqFOZAAauACP42ObWTm16" target="_blank"><strong>SateHaze1k Dataset</strong></a> — A remote sensing haze dataset curated for evaluating dehazing performance on satellite images under thin, moderate, and thick fog levels. </li> </ul>
+<ul> <li> <a href="https://codalab.lisn.upsaclay.fr/competitions/17529#learn_the_details" target="_blank"><strong>DNH-HAZE Dataset</strong></a> — A high-resolution real-world haze dataset used in the NTIRE dehazing challenges, featuring 6000×4000 images captured under various natural haze conditions. </li> <li> <a href="https://drive.google.com/drive/folders/1kLl5qYFmgxtLqFOZAAauACP42ObWTm16" target="_blank"><strong>SateHaze1k Dataset</strong></a> — A remote sensing haze dataset curated for evaluating dehazing performance on satellite images under thin, moderate, and thick fog levels. </li> </ul>
 
 ## 🚀 Usage
 
